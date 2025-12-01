@@ -80,7 +80,7 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist  <-- השינוי הוא כאן: שמתי סולמית כדי לבטל את ההסתרה
 .output
 
 # Gatsby files
