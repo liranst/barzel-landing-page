@@ -66,7 +66,7 @@ export default function Pricing() {
           <Card
             badge="מומלץ לבינוניים עד מתקדמים"
             title="ליווי אונליין"
-            price="₪550"
+            price="₪600"
             period="/חודש"
             description="מעטפת ליווי מקצועי שלמה הנבנית סביב סדר היום, הרמה והמטרות שלך."
             cta="לתשלום"
@@ -85,7 +85,7 @@ export default function Pricing() {
             badge="מומלץ למתחילים"
             // תיקון: העברת התוכן כ-React Node כדי לאפשר <br/> בטוח
             title={<>היברידי<br />(פרונטלי + אונליין)</>}
-            price="₪1,000"
+            price="₪1,200"
             period="/חודש"
             description="שילוב בין אימונים פרונטליים לליווי אונליין"
             cta="בדוק זמינות"
@@ -118,7 +118,7 @@ export default function Pricing() {
 
           <Card
             title="אימונים פרונטליים / זוגיים"
-            price="₪200"
+            price="₪250"
             period="לאימון"
             description="אימוני כח וטכניקה בסטודי פרטי בהוד השרון. התחייבות ל־4 או 8 אימונים בחודש."
             cta="תאם אימון"
