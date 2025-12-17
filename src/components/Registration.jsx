@@ -96,7 +96,8 @@ export default function Registration(){
                     onClick={() => toggle(step.id)}
                   >
                     {/* הוספה: aria-hidden להסתרת התוכן הויזואלי מקוראי מסך (הם מקבלים את ה-aria-label) */}
-                    <span aria-hidden="true">{open[step.id] ? '-' : '+'}</span>
+                    {/* תמיד מציגים '+' ומסתמכים על האנימציה (סיבוב) להצגתו כ'✕' כשהוא פתוח */}
+                    <span className="step-icon" aria-hidden="true">+</span>
                   </button>
                 </div>
                 <div 
