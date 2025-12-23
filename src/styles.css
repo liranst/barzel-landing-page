@@ -479,6 +479,27 @@ body {
     animation: fadeInUp 1s ease-out 0.4s both;
 }
 
+a, button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    text-decoration: none; 
+    text-transform: none;
+    display: inline-block;
+    vertical-align: middle;
+    color: inherit;
+}
+
+button {
+  /* Specific reset for button's browser defaults */
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .btn-primary {
     background: var(--white);
     color: var(--metal-black);
@@ -1371,7 +1392,7 @@ section::before {
 */
 
 .step-toggle {
-    background: var(--silver);
+    background: transparent;
     color: var(--metal-black);
     border: none;
     width: 40px;
@@ -1393,13 +1414,37 @@ section::before {
 }
 
 .step-toggle:hover {
-    background: var(--white);
-    transform: scale(1.1);
+    /* keep the button hover subtle; the icon inside handles the main visual */
+    background: transparent;
+    transform: none;
 }
 
-.step-toggle[aria-expanded="true"] {
-    transform: rotate(45deg);
+/* Visual icon inside the toggle (keeps accessible label on the button itself) */
+.step-toggle .step-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #b7b7b71a; /* subtle translucent */
+    color: var(--silver);
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.step-toggle:hover .step-icon {
+    transform: scale(1.06);
     background: var(--white);
+    color: var(--metal-black);
+}
+
+/* When expanded rotate the inner '+' into an '×'-like cross and invert colors */
+.step-toggle[aria-expanded="true"] .step-icon {
+    transform: rotate(45deg);
+    background: var(--silver);
+    color: var(--metal-black);
 }
 
 .step-body {

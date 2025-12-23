@@ -69,7 +69,7 @@ export default function Pricing() {
             price="₪600"
             period="/חודש"
             description="מעטפת ליווי מקצועי שלמה הנבנית סביב סדר היום, הרמה והמטרות שלך."
-            cta="לתשלום"
+            cta="להבטחת מקום בליווי"
             href="https://meshulam.co.il/purchase?b=d9b485f0f34e8286e08f91f4393a6103"
             popupUrl={true}
             features={[
