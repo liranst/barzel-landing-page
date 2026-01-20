@@ -66,7 +66,7 @@ export default function Pricing() {
           <Card
             badge="מומלץ לבינוניים עד מתקדמים"
             title="ליווי אונליין"
-            price="₪600"
+            price="₪700"
             period="/חודש"
             description="מעטפת ליווי מקצועי שלמה הנבנית סביב סדר היום, הרמה והמטרות שלך."
             cta="להבטחת מקום בליווי"
@@ -101,7 +101,7 @@ export default function Pricing() {
           <Card
             badge="מומלץ למתחרים"
             title="ליווי תחרותי"
-            price="₪750"
+            price="₪900"
             period="/חודש"
             description="הכנה תחרותית למתחרים ומתחרות בפיתוח גוף טבעי."
             cta="לתשלום"
